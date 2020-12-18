@@ -72,8 +72,9 @@ Structure of working
 
 All results
 
-![screencapture-localhost-3000-2020-12-18-03_00_09](https://user-images.githubusercontent.com/67025166/102598402-cfe1f780-40d0-11eb-8c71-1c3dbcc71d5c.png)
-![screencapture-localhost-3000-cart-2020-12-18-03_00_29](https://user-images.githubusercontent.com/67025166/102598430-dec8aa00-40d0-11eb-8281-feb320e4baef.png)
-![screencapture-localhost-3000-customers-books-2020-12-18-03_00_57](https://user-images.githubusercontent.com/67025166/102598435-e0926d80-40d0-11eb-9164-f4eea34cb880.png)
-![screencapture-localhost-3000-customers-cancel-2020-12-18-02_59_39](https://user-images.githubusercontent.com/67025166/102598438-e1c39a80-40d0-11eb-961f-d8e453f072ff.png)
+![screencapture-localhost-3000-2020-12-18-03_00_09](https://user-images.githubusercontent.com/67025166/102598770-5e567900-40d1-11eb-9d7b-b23d8e05ac47.png)
+![screencapture-localhost-3000-cart-2020-12-18-03_00_29](https://user-images.githubusercontent.com/67025166/102598841-775f2a00-40d1-11eb-9717-36ec63191742.png)
+![screencapture-localhost-3000-customers-books-2020-12-18-03_00_57](https://user-images.githubusercontent.com/67025166/102598854-7a5a1a80-40d1-11eb-8091-3faad5445f1c.png)
+![screencapture-localhost-3000-customers-cancel-2020-12-18-02_59_39](https://user-images.githubusercontent.com/67025166/102598857-7b8b4780-40d1-11eb-9884-768c7091a683.png)
+![screencapture-localhost-3000-customers-cancel-2020-12-18-03_05_29](https://user-images.githubusercontent.com/67025166/102598860-7cbc7480-40d1-11eb-9e6e-1cc3321b9db5.png)
 
