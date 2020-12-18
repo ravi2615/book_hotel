@@ -12,7 +12,7 @@
 [+] Install tailwind css
 [+] Create Home page using Html and Css
 [+] Create Cart page
-    - order summary section
+    - Booking summary section
     - empty cart section
 [+] - move routes to routes files
 [+] - Create dedicated controllers
