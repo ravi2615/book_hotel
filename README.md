@@ -36,3 +36,9 @@
 [+] Create Booking view with table for customer
 [+] Place Booking functionality
 [+] Show all my Booking on custormer Booking page
+
+
+
+Structure of working
+
+![structure~2](https://user-images.githubusercontent.com/67025166/102593965-75459d00-40ca-11eb-8bab-cca1303d7de8.png)
