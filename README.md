@@ -39,7 +39,8 @@
             - dependancies
                 - mongoose, express-session, connect-mongo, dotenv
     - axios to send ajax request
-    - install notification library npm i noty   https://ned.im/noty/#/
+    - install notification library npm i noty  
+       (https://ned.im/noty/#/)
     
 [+] Create login page with route
 
