@@ -1,10 +1,14 @@
 [+] Create directory structure
+
 [+] Create a NPM project and install all dependancies
+
     - Dependancies
         - express
         - ejs express-ejs-layouts
+        
     - Dev dependancies
         - nodemon
+        
 [+] Create Express server - Create a server.js file
 [+] Git setup and first commit
 [+] Install Laravel Mix
@@ -36,6 +40,8 @@
 [+] Create Booking view with table for customer
 [+] Place Booking functionality
 [+] Show all my Booking on custormer Booking page
+
+
 
 
 
