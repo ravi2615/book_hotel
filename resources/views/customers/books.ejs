@@ -1,6 +1,6 @@
 
 <section class="booking light-section">
-    <div class="container mx-auto pt-12">
+    <div class="container mx-auto pt-24 mt-20">
         <h1 class="font-bold text-lg mb-4">All booking</h1>
         <% if(messages.success) { %>
         <div id="success-alert" class="flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3"
@@ -19,6 +19,7 @@
                     <th class="px-4 py-2 text-left">Phone</th>
                     <th class="px-4 py-2 text-left">Address</th>
                     <th class="px-4 py-2 text-left">Booked On</th>
+                    <th class="px-4 py-2 text-left">CheckIn</th>
                     <th class="px-4 py-2 text-left">Cancel</th>
                 </tr>
             </thead>
@@ -36,6 +37,9 @@
                     </td>
                     <td class="border px-4 py-2">
                         <%= moment(book.createdAt).format('LLLL') %>
+                    </td>
+                    <td class="border px-4 py-2">
+                        <%= moment(book.bookedTime).format('LLLL') %>
                     </td>
                     <% if(moment(book.bookedTime).format('YYYY-MM-DD') > (moment().format('YYYY-MM-DD')) ) { %>
                         <td class="border px-4 py-2 text-white link bg-green-500">

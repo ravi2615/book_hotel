@@ -26,9 +26,11 @@ function cancelController () {
                 items: books.items,
                 refundedAmount: refundedAmount,
                 deductCharge: deductCharge,
+                cardNumber: books.cardNumber,
                 phone: books.phone,
                 address: books.address,
                 bookedTime: books.bookedTime,
+                canceledTime: moment().format('LLLL')
             })
             cancel.save().then(result => {
                 Cancel.populate(result, {path: 'customerId'}, (err, canceledOrder) => {

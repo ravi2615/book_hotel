@@ -1,4 +1,4 @@
-<section class="cart py-16">
+<section class="cart py-24">
     <% if(session.cart) { %>
     <div class="book container mx-auto xl:w-1/2">
         <div class="flex items-center border-b border-gray-300 pb-4">
@@ -27,6 +27,7 @@
         <div>
             <span class="text-lg font-bold">Total Amount:</span>
             <span class="amount text-2xl font-bold ml-2">₹<%= session.cart.totalPrice %></span>
+            <h3 class="font-bold py-4">Paid for one day rest after checkout/checkIn</h3>
         </div>
         <% if(user) { %>
         <div>
@@ -43,6 +44,8 @@
                 <input name="phone" class="border border-gray-400 p-2 w-1/2 mb-4" type="text"
                     placeholder="Phone number">
                 <input name="address" class="border border-gray-400 p-2 w-1/2 mb-4" type="text" placeholder="Address"><br>
+                <label class="text-white p-2 w-1/2 mb-1">Card Number</label><br>
+                <input name="cardNumber" class="border border-gray-400 p-2 w-1/2 mb-4" type="Number" placeholder="xxxxxxxxxxxxxxxx"><br>
                   <label class="text-white p-2 w-1/2 mb-1">CheckIn Date</label><br>
                 <input type='date' name="date" class="border border-gray-400 p-2 w-1/2">
                

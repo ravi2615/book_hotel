@@ -27,8 +27,9 @@
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
                 <li class="ml-6 text-center"><a href="/">Home</a></li>
-                <li class="ml-6 text-center"><a href="/customers/books">My Booking</a></li>
                 <% if(user) { %>
+                <li class="ml-6 text-center"><a href="/customers/books">My Booking</a></li>
+                
                 <li class="ml-6 text-center">
                     <form id="logout" action="/logout" method="POST">
                         <a onclick="document.getElementById('logout').submit()" href="#">Logout</a></li>

@@ -1,12 +1,12 @@
 
 
 <section class="book light-section">
-    <div class="container mx-auto pt-12">
-        <h1 class="font-bold text-lg mb-4">All Canceled books</h1>
+    <div class="container mx-auto pt-24 mt-20">
+        <h1 class="font-bold text-lg mb-4">All Canceled booking</h1>
         
         <div class="text-center">
-            <h1 class="font-bold mb-2 text-red-500"> *Notes</h1>
-            <p class="text-gray-500 text-lg mb-12"> You will get refund SMS on your mobile number(given during order)<br>
+            <h1 class="font-bold mb-2 text-red-500 text-sm"> *Notes</h1>
+            <p class="text-gray-500 text-sm mb-12"> You will get refund SMS on your mobile number(given during order)<br>
                 after deducting internet handle charges of 15% within 15 minutes. For any query call to our toll free number 4440004440. </p>
                  </div>
 
@@ -26,7 +26,9 @@
                     <th class="px-4 py-2 text-left">Booking</th>
                     <th class="px-4 py-2 text-left">Phone</th>
                     <th class="px-4 py-2 text-left">Address</th>
-                    <th class="px-4 py-2 text-left">Time</th>
+                    <th class="px-4 py-2 text-left">Booked On</th>
+                    <th class="px-4 py-2 text-left">CheckIn</th>
+                    <th class="px-4 py-2 text-left">Canceled On</th>
                     <th class="px-4 py-2 text-left">Refunded Amount</th>
                     <th class="px-4 py-2 text-left">Charge deducted</th>
                     <th class="px-4 py-2 text-left">Payment Status</th>
@@ -48,6 +50,12 @@
                     </td>
                     <td class="border px-4 py-2">
                         <%= moment(book.createdAt).format('LLLL') %>
+                    </td>
+                    <td class="border px-4 py-2">
+                        <%= moment(book.bookedTime).format('LLLL') %>
+                    </td>
+                    <td class="border px-4 py-2">
+                        <%= moment(book.canceledTime).format('LLLL') %>
                     </td>
                     <td class="border px-4 py-2">
                         ₹<%= book.refundedAmount %>

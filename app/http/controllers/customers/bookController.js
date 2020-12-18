@@ -6,7 +6,7 @@ function orderController () {
     return {
         store(req, res) {
     //         //Validate request
-            const{ phone, address,date } = req.body
+            const{ phone, address, date, cardNumber } = req.body
             if(!phone || !address) {
                 req.flash('error', 'All Fields are required')
                 return res.redirect('/cart')
@@ -16,6 +16,7 @@ function orderController () {
                 items: req.session.cart.items,
                 paymentAmount: req.session.cart.totalPrice,
                 bookedTime: date,
+                cardNumber,
                 phone,
                 address,
             })

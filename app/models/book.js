@@ -11,6 +11,7 @@ const bookSchema = new Schema({
     phone: { type: String, required: true},
     address: { type: String, required: true},
     paymentType: { type: String, default: 'CARD'},
+    cardNumber: { type: Number, default: 0},
     paymentAmount: { type: Number, default: 0},
     paymentStatus: { type: Boolean, default: true },
     status: { type: String, default: 'book_placed'},
