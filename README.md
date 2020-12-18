@@ -68,3 +68,12 @@
 Structure of working
 
 ![structure~2](https://user-images.githubusercontent.com/67025166/102593965-75459d00-40ca-11eb-8bab-cca1303d7de8.png)
+
+
+All results
+
+![screencapture-localhost-3000-2020-12-18-03_00_09](https://user-images.githubusercontent.com/67025166/102598402-cfe1f780-40d0-11eb-8c71-1c3dbcc71d5c.png)
+![screencapture-localhost-3000-cart-2020-12-18-03_00_29](https://user-images.githubusercontent.com/67025166/102598430-dec8aa00-40d0-11eb-8281-feb320e4baef.png)
+![screencapture-localhost-3000-customers-books-2020-12-18-03_00_57](https://user-images.githubusercontent.com/67025166/102598435-e0926d80-40d0-11eb-9164-f4eea34cb880.png)
+![screencapture-localhost-3000-customers-cancel-2020-12-18-02_59_39](https://user-images.githubusercontent.com/67025166/102598438-e1c39a80-40d0-11eb-961f-d8e453f072ff.png)
+
