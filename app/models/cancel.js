@@ -17,7 +17,6 @@ const cancelSchema = new Schema({
     paymentStatus: { type: Boolean, default: true },
     status: { type: String, default: 'canceled'},
     bookedTime: { type: String, required: true},
-    canceledTime: { type: String, required: true},
 }, { timestamps: true })
 
 module.exports = mongoose.model('Cancel', cancelSchema)

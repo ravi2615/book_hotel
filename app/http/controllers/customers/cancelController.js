@@ -21,6 +21,7 @@ function cancelController () {
             const deductCharge = ((0.15*books.paymentAmount))  // 15% Charge
             const refundedAmount = books.paymentAmount - deductCharge // 15% deducted as internet handling charges
             // books.status="canceled"
+            const canceledTime = moment().format('YYYY-MM-DD')
             const cancel = new Cancel({
                 customerId: req.user._id,
                 items: books.items,
@@ -30,7 +31,6 @@ function cancelController () {
                 phone: books.phone,
                 address: books.address,
                 bookedTime: books.bookedTime,
-                canceledTime: moment().format('LLLL')
             })
             cancel.save().then(result => {
                 Cancel.populate(result, {path: 'customerId'}, (err, canceledOrder) => {
