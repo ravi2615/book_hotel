@@ -1,0 +1,43 @@
+[{
+    "_id": {
+      "$oid": "5eee651f739f8c674fd736ee"
+    },
+    "name": "Capitol Hill",
+    "image": "1.webp",
+    "price": "1000"
+  },{
+    "_id": {
+      "$oid": "5eee6671a27a66807cf2bea3"
+    },
+    "name": "FabHotel Palash Residency",
+    "image": "2.webp",
+    "price": "1200"
+  },{
+    "_id": {
+      "$oid": "5eee6692a27a66807cf2bea4"
+    },
+    "name": "Le Lac Sarovar Portico- Ranchi",
+    "image": "3.webp",
+    "price": "1300"
+  },{
+    "_id": {
+      "$oid": "5eee66a5a27a66807cf2bea5"
+    },
+    "name": "Radisson Blu Hotel Ranchi",
+    "image": "4.webp",
+    "price": "1100"
+  },{
+    "_id": {
+      "$oid": "5eee66c4a27a66807cf2bea6"
+    },
+    "name": "Hotel Arham Inn",
+    "image": "5.webp",
+    "price": "950"
+  },{
+    "_id": {
+      "$oid": "5eee66cfa27a66807cf2bea7"
+    },
+    "name": "Chanakya Bnr Hotel",
+    "image": "6.webp",
+    "price": "1500"
+  }]

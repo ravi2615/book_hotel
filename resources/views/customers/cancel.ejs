@@ -1,0 +1,78 @@
+
+
+<section class="book light-section">
+    <div class="container mx-auto pt-12">
+        <h1 class="font-bold text-lg mb-4">All Canceled books</h1>
+        
+        <div class="text-center">
+            <h1 class="font-bold mb-2 text-red-500"> *Notes</h1>
+            <p class="text-gray-500 text-lg mb-12"> You will get refund SMS on your mobile number(given during order)<br>
+                after deducting internet handle charges of 15% within 15 minutes. For any query call to our toll free number 4440004440. </p>
+                 </div>
+
+        <% if(messages.success) { %>
+        <div id="success-alert" class="flex items-center bg-green-500 text-white text-sm font-bold px-4 py-3"
+            role="alert">
+            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                    d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z" />
+            </svg>
+            <p><%= messages.success %></p>
+        </div>
+        <% } %>
+        <table class="w-full table-auto">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2 text-left">Booking</th>
+                    <th class="px-4 py-2 text-left">Phone</th>
+                    <th class="px-4 py-2 text-left">Address</th>
+                    <th class="px-4 py-2 text-left">Time</th>
+                    <th class="px-4 py-2 text-left">Refunded Amount</th>
+                    <th class="px-4 py-2 text-left">Charge deducted</th>
+                    <th class="px-4 py-2 text-left">Payment Status</th>
+                    <th class="px-4 py-2 text-left"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if(books.length) { %>
+                <% books.forEach((book) => { %>
+                <tr>
+                    <td class="border px-4 py-2 line-through">
+                        <%= book._id %>
+                    </td>
+                    <td class="border px-4 py-2">
+                        <%= book.phone %>
+                    </td>
+                    <td class="border px-4 py-2">
+                        <%= book.address %>
+                    </td>
+                    <td class="border px-4 py-2">
+                        <%= moment(book.createdAt).format('LLLL') %>
+                    </td>
+                    <td class="border px-4 py-2">
+                        ₹<%= book.refundedAmount %>
+                    </td>
+                    <td class="border px-4 py-2">
+                        ₹<%= book.deductCharge %>
+                    </td>
+                        <td class="border px-4 py-2">
+                            <%= book.paymentStatus ? 'Refunded' : 'Not paid' %>
+                        </td>
+                        <td class="border px-4 py-2 bg-red-700 text-white">
+                            <!-- Canceled -->
+                            <%= book.status %>
+                        </td>
+                </tr>
+                <% }) %>
+                <% } else { %>
+                <tr>
+                    <td class="p-4"><span>No booking found!</span></td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    
+

@@ -1,0 +1,33 @@
+
+    <section class="hero py-16">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="w-1/2 content">
+                <h1 class="text-3xl md:text-6xl font-bold">Don't wait !</h1>
+                <a href="#hotels" class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Book Now</a>
+                <h3 class="font-bold py-4">Paid for one day rest after checkout</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu container mx-auto py-8 text-center justify-center" id="hotels">
+        <h1 class="text-xl font-bold mb-8">All Hotels</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16">
+            <% hotels.forEach(function(hotel){ %>
+                <div class="w-64" >
+                    <img class="h-40 mb-4 mx-auto" src="/img/<%= hotel.image %>" alt="">
+                    <div class="text-center">
+                        <h2 class="mb-4 text-lg"><%= hotel.name %></h2>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">₹<%= hotel.price %>/day</span>
+                            <button data-hotel="<%= JSON.stringify(hotel) %>"
+                                class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                                <span>+</span>
+                                <span class="ml-4">Add Room</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+            
+        </div>
+    </section>
