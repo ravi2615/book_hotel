@@ -25,9 +25,6 @@ function orderController () {
                     
                     req.flash('success', 'Booking placed successfully')
                     delete req.session.cart
-                    //Emit
-                    const eventEmitter = req.app.get('eventEmitter')
-                    eventEmitter.emit('bookPlaced', result)
                    
                     return res.redirect('/customers/books')
                     
