@@ -11,10 +11,10 @@ function cancelController () {
 
             // console.log("deletting")
             const books = await Book.findById(req.params.id)
-            // console.log(moment().format('YYYY-MM-DD'))
+            console.log(books.bookedTime)
 
             //check checkin date and booked date
-            if(books.bookedTime != moment().format('YYYY-MM-DD')) {
+            if(books.bookedTime > moment().format('YYYY-MM-DD')) {
 
             await Book.findByIdAndDelete({_id: req.params.id})
 

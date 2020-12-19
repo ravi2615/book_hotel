@@ -11,6 +11,7 @@ function orderController () {
                 req.flash('error', 'All Fields are required')
                 return res.redirect('/cart')
             }
+            // console.log(date)
             const book = new Book({
                 customerId: req.user._id,
                 items: req.session.cart.items,
