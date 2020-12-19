@@ -102,4 +102,3 @@ Cancel booking page with notification
 
 ![screencapture-localhost-3000-customers-cancel-2020-12-18-03_05_29](https://user-images.githubusercontent.com/67025166/102598860-7cbc7480-40d1-11eb-9e6e-1cc3321b9db5.png)
 
->>>>>>> 0b0c6f8b7c9c44aee58836328155df0d8819da39
