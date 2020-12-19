@@ -9,22 +9,14 @@
         
     - Dev dependancies
         - nodemon
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 0b0c6f8b7c9c44aee58836328155df0d8819da39
 [+] Create Express server - Create a server.js file
 
 [+] Git setup and first commit
 
 [+] Install Laravel Mix
     - setup js and scss
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 0b0c6f8b7c9c44aee58836328155df0d8819da39
 [+] Install tailwind css
 
 [+] Create Home page using Html and Css
@@ -32,41 +24,29 @@
 [+] Create Cart page
     - Booking summary section
     - empty cart section
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 0b0c6f8b7c9c44aee58836328155df0d8819da39
 [+] - move routes to routes files
 
 [+] - Create dedicated controllers
 
 [+] Add to cart functionality
-<<<<<<< HEAD
     
     [+] Fetch all Hotels from db and show on home page
     
     [+] Create List model and put dummy Data
-=======
 
 [+] Fetch all Hotels from db and show on home page
     
 [+] Create List model and put dummy Data
     
->>>>>>> 0b0c6f8b7c9c44aee58836328155df0d8819da39
         - connect to mongo db
         - use connect-mongo for session store
             - dependancies
                 - mongoose, express-session, connect-mongo, dotenv
     - axios to send ajax request
-<<<<<<< HEAD
-    - install notification library npm i noty   https://ned.im/noty/#/
-
-=======
     - install notification library npm i noty  
        (https://ned.im/noty/#/)
     
->>>>>>> 0b0c6f8b7c9c44aee58836328155df0d8819da39
 [+] Create login page with route
 
 [+] Create register page with route
@@ -74,26 +54,22 @@
 [+] Build register crud
     - dependancies express-flash express-session dotenv
     - status code article https://www.restapitutorial.com/httpstatuscodes.html
-<<<<<<< HEAD
 
 [+] Build login using passport
     - install dependancies passport passport-local express-session
 
-=======
     
 [+] Build login using passport
     - install dependancies passport passport-local express-session
-    
->>>>>>> 0b0c6f8b7c9c44aee58836328155df0d8819da39
+
 [+] Create Booking controller and link it in server.js
 
 [+] Create Booking view with table for customer
 
 [+] Place Booking functionality
 
-<<<<<<< HEAD
 [+] Show all my Booking on custormer Booking page
-=======
+
 [+] Show all my Booking on customer Booking page
 
 
